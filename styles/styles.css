@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 2rem;
+  
+  background-image: url("/images/mine-view-park_2017-01-09_16-28-11.jpg");
+  background-size: cover;
+  color: white;
+  }
+    
+  header {
+  background-color: rgba(9, 133, 9, 0.705);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  }
+    
+  .container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  }
+    
+  .left-side {
+  flex: 1;
+  max-width: 500px;
+  }
+    
+  .right-side {
+  flex: 1;
+  color: rgb(0, 0, 0);
+  }
+    
+  #toggle {
+  display: none;
+  }
+    
+  .toggle-arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  padding: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transform: rotate(130deg);
+  transition: transform 0.3s ease;
+  }
+    
+  #toggle:checked + .toggle-arrow {
+  transform: rotate(-45deg);
+  }
+    
+  .image-container {
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  }
+    
+  .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  }
+    
+  #nowImage {
+  display: none;
+  }
+    
+  #toggle:checked ~ .image-container #beforeImage {
+  display: none;
+  }
+  #toggle:checked ~ .image-container #nowImage {
+  display: block;
+  }
+    
