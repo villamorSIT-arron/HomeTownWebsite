@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -10,14 +10,13 @@
 </head>
 <body>
 
-    <!-- HEADER -->
     <header>
         <div class="header-left">
             <h1>My Hometown</h1>
         </div>
         <nav class="header-right">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="history.html">History</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="tourist-spots.html">Tourist Spots</a></li>
@@ -26,12 +25,23 @@
         </nav>
     </header>
 
+    <section class="top-video-section">
+        <h2>Welcome to Baguio City</h2>
 
-    <!-- MAIN CONTENT -->
+        <video controls class="top-video">
+            <source src="videos/history.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <p class="top-video-desc">
+            A short video showcasing the scenic beauty, culture, and vibrant city life of Baguio City.
+        </p>
+    </section>
+
     <div class="container">
 
-        <!-- LEFT SIDE: IMAGE AND TOGGLE -->
         <div class="left-side">
+
             <input type="checkbox" id="toggle" />
             <label for="toggle" class="toggle-arrow"></label>
 
@@ -41,9 +51,8 @@
             </div>
         </div>
 
-        <!-- RIGHT SIDE: TEXT CONTENT -->
         <div class="right-side">
-            <h2>Welcome to Baguio City: Past Meets Present</h2>
+            <h2>The City Where The Past Meets Present</h2>
             <p>Nestled in the cool mountains of Northern Luzon, Baguio City has long been a beloved destination for travelers seeking respite from the heat of the lowlands.</p>
 
             <h2>Then and Now</h2>
@@ -54,6 +63,37 @@
             <p>Join us as we explore the stories, sights, and experiences that have shaped Baguio into the dynamic city it is today.</p>
         </div>
     </div>
+
+<section class="quick-links">
+    <h2>Explore More</h2>
+    <div class="quick-links-grid">
+        <a href="history.html" class="quick-link">
+            <img src="images/history-box.jpg" alt="History Page">
+            <h3>History</h3>
+            <p>Discover the rich history of Baguio City, from its colonial past to modern times.</p>
+        </a>
+        <a href="gallery.html" class="quick-link">
+            <img src="images/gallery.jpg" alt="Gallery Page">
+            <h3>Gallery</h3>
+            <p>Browse stunning photos capturing Baguio’s landmarks, culture, and events.</p>
+        </a>
+        <a href="tourist-spots.html" class="quick-link">
+            <img src="images/tourist-spots.jpg" alt="Tourist Spots Page">
+            <h3>Tourist Spots</h3>
+            <p>Plan your visit to the city’s must-see attractions and scenic spots.</p>
+        </a>
+        <a href="contact.html" class="quick-link">
+            <img src="images/contact.jpg" alt="Contact Page">
+            <h3>Contact</h3>
+            <p>Get in touch with us for inquiries or learn more about our city guides.</p>
+        </a>
+    </div>
+</section>
+
+
+    <footer>
+        &copy; 2025 My Hometown Website. All rights reserved.
+    </footer>
 
 </body>
 </html>
